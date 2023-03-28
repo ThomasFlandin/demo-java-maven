@@ -11,11 +11,8 @@ clonage du depot / commencer la creation du dockerfile
 ## Probleme rencontrés :
 Fichier POM, Commande NVM package, variables d'environnement dans les conteneurs
 
-## Comment lancer le projet
-1. Executez la commande suivante: `git clone https://github.com/ThomasFlandin/demo-java-maven.git`
-2. `docker build -t app-exam:latest .`
-3. `docker run -p 30000:8080 app-exam:latest`
-4. Executez un navigateur web puis connectez-vous à http://localhost:30000
+## Comment télécharger notre image depuis docker hub ?
+1. docker run -p 30000:8080 normitm/examdocker:latest
 
 
 
