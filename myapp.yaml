@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-example
+spec:
+  replicas: 3
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: myapp
+      env: prod
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    template:
+      metadata:
+        name: myapp
+      spec:
+        containers:
+        - name: myapp
+          image: normitm/examdocker
+          ports:
+          - containerPort: 80
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip
+spec:
+  selector:
+    app: myapp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 30000
