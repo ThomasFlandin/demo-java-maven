@@ -4,11 +4,11 @@ Norman NIATI
 Luc Bruneau
 Nicolas LEVRA 
 
-##Etapes du projets##
+## Etapes du projets
 Recherche de fonctionnlaités Jetty et Maven, repartition des taches, organisation du deploimenets 
 clonage du depot / commencer la creation du dockerfile
 
-##Probleme rencontrés :##
+## Probleme rencontrés :
 Fichier POM, Commande NVM package, variables d'environnement dans les conteneurs
 
 
