@@ -1,3 +1,18 @@
+# Examen Conteneur et Messagerie de VM
+Groupe : Thomas FLANDIN 
+Norman NIATI
+Luc Bruneau
+Nicolas LEVRA 
+
+##Etapes du projets##
+Recherche de fonctionnlaités Jetty et Maven, repartition des taches, organisation du deploimenets 
+clonage du depot / commencer la creation du dockerfile
+
+##Probleme rencontrés :##
+Fichier POM, Commande NVM package, variables d'environnement dans les conteneurs
+
+
+
 This project uses Maven to package a web app.
 
 This project is laid out like this:
